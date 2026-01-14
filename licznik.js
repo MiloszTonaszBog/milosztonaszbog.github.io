@@ -7,6 +7,11 @@ fetch('licznik.txt')
   })
   .then(text => {
     console.log(text);
-    // tu możesz przetwarzać zawartość pliku
+    const licznik = document.getElementById("licznik")
+    licznik.text = "Jest już nas: " + text
+
   })
   .catch(err => console.error(err));
+
+
+
