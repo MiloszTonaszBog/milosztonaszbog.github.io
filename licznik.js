@@ -8,7 +8,7 @@ fetch('licznik.txt')
   .then(text => {
     console.log(text);
     const licznik = document.getElementById("licznik")
-    licznik.text = "Jest już nas: " + text
+    licznik.textContent = "Jest już nas: " + text
 
   })
   .catch(err => console.error(err));
