@@ -1,4 +1,4 @@
-fetch('/data/values.txt')
+fetch('licznik.txt')
   .then(response => {
     if (!response.ok) {
       throw new Error('Błąd HTTP');
